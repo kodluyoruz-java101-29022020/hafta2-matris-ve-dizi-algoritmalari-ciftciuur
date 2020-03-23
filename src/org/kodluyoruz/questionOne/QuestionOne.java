@@ -14,9 +14,7 @@ public class QuestionOne {
      */
     public static int[][] fillArray(int array[][], int number) {
         for (int i = 0; i < array.length; i++) {
-            // do the for in the row according to the column size
             for (int j = 0; j < array[i].length; j++) {
-                // multiple the random by 10 and then cast to in
                 array[i][j] = ((int) (Math.random() * number));
             }
         }
@@ -25,8 +23,6 @@ public class QuestionOne {
 
     public static void matrixElementWrite(int array[][]) {
         for (int[] row : array)
-            // converting each row as string
-            // and then printing in a separate line
             System.out.println(Arrays.toString(row));
     }
 
