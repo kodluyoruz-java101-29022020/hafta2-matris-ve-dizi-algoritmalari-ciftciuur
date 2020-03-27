@@ -2,7 +2,8 @@ package org.kodluyoruz.questionTwo;
 
 public class QuestionTwo {
     public static void main(String[] args) {
-        int[][] spiral = fillMatrixArray(5);
+        int[][] spiral =new int[5][5];
+        fillMatrixArray(spiral);
         writeArrayElements(spiral);
         writeSprintArray(spiral.length, spiral.length, spiral);
     }
@@ -11,21 +12,21 @@ public class QuestionTwo {
 
      */
 
-    public static int[][] fillMatrixArray(int n) {
+    public static int[][] fillMatrixArray(int[][] array) {
         //bu metod verilen n sayısı boyutunda matrix olusturu ve oraya sprial şekilde doldurur
-        int[][] spiral = new int[n][n];
+        int[][] spiral = array;
 
         int value = 1;
 
         int minCol = 0;
 
-        int maxCol = n - 1;
+        int maxCol = array.length - 1;
 
         int minRow = 0;
 
-        int maxRow = n - 1;
+        int maxRow = array.length - 1;
 
-        while (value <= n * n) {
+        while (value <= array.length * array.length) {
             for (int i = minCol; i <= maxCol; i++) {
                 spiral[minRow][i] = value;
 
