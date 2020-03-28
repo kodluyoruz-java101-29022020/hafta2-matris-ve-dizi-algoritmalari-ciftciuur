@@ -13,7 +13,6 @@ public class QuestionTwo {
      */
 
     public static int[][] fillMatrixArray(int[][] array) {
-        //bu metod verilen n sayısı boyutunda matrix olusturu ve oraya sprial şekilde doldurur
         int[][] spiral = array;
 
         int value = 1;
