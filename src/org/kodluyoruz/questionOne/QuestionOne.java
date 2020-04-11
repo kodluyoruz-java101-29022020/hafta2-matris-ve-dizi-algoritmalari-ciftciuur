@@ -7,6 +7,9 @@ public class QuestionOne {
 
         int array[][] = fillArray(new int[5][5], 2);
         matrixElementWrite(array);
+        System.out.println("--");
+        //matrixElementWrite(convertMatrix(array));
+        convertMatrix(array);
     }
 
     /*
@@ -24,6 +27,12 @@ public class QuestionOne {
     public static void matrixElementWrite(int array[][]) {
         for (int[] row : array)
             System.out.println(Arrays.toString(row));
+    }
+
+
+    public static int[][] convertMatrix(int[][] array) {
+
+        return null;
     }
 
 
